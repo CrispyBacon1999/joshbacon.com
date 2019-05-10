@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-uifabric",
+  "name": "joshbacon",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Website for joshbacon.com",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -17,7 +17,9 @@
     "gatsby": "^2.4.0",
     "office-ui-fabric-react": "^6.176.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
     "gatsby-plugin-typescript": "^2.0.13",
@@ -25,9 +27,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/CrispyBacon1999/crispybacon1999.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/CrispyBacon1999/crispybacon1999.github.io/issues"
   }
 }
