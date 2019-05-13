@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script+Swash+Caps');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script+Swash+Caps|Ubuntu+Mono');
 
 .App {
     text-align: center;
@@ -30,4 +30,12 @@ html,
 #___gatsby {
     height: 100%;
     margin: 0;
+}
+
+pre {
+    margin: 0;
+}
+
+pre code {
+    padding: 10px;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Stack, Text, Link, FontWeights } from "office-ui-fabric-react"
+import { Stack, Text, Link, FontWeights, Shimmer } from "office-ui-fabric-react"
 import "./index.css"
 
 import { NeutralColors } from "@uifabric/fluent-theme/lib/fluent/FluentColors"
@@ -8,7 +8,14 @@ import { Depths } from "@uifabric/fluent-theme/lib/fluent/FluentDepths"
 
 const boldStyle = { root: { fontWeight: FontWeights.semibold } }
 
-class App extends Component {
+class App extends Component<{}, { loading: boolean }> {
+  constructor(props) {
+    super(props)
+    this.state = {
+      loading: true,
+    }
+  }
+
   render() {
     return (
       <div>
@@ -46,7 +53,7 @@ class App extends Component {
           >
             vyper
           </h1>
-          <Stack horizontal gap={20}>
+          <Stack horizontal gap={25}>
             <Card headline="Quick.">
               Have your bot up and running in less than 5 minutes.
             </Card>
@@ -57,6 +64,30 @@ class App extends Component {
               Extend with plugins to handle the toughest of tasks.
             </Card>
           </Stack>
+          <div
+            style={{
+              boxShadow: Depths.depth8,
+              paddingBottom: 20,
+              width: 500,
+            }}
+          >
+            <h2
+              style={{
+                fontFamily: "Lobster, cursive",
+                fontSize: "2rem",
+              }}
+            >
+              Installation
+            </h2>
+            <span
+              style={{
+                fontFamily: "Ubuntu Mono, monospace",
+                fontSize: "1.2rem",
+              }}
+            >
+              pip install vyper-bot
+            </span>
+          </div>
         </Stack>
       </div>
     )
